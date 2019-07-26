@@ -18,7 +18,7 @@ a, a:hover{
 	color: #688;
 }
 
-.page-link:focus, input:focus{
+.page-link:focus, input:focus, select:focus{
 	border-color: #788;
 	outline: 0 0 0 0  !important;
 	box-shadow: 0 0 0 0 !important;
