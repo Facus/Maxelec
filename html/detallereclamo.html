@@ -5,141 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reclamo | Detalle de Reclamo</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/asistencias.css">
+    <!--Fontawesome CDN-->
+    <script src="https://kit.fontawesome.com/b65080887d.js"></script>
 </head>
 <body>
     <main>
     <div class="container">
-        <h1>Reclamo</h1>
-
-        <h3>Detalle de Reclamo #218975</h3>
-
-        <form>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label"><b>Datos del Cliente:</b></label>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Nombre y Apellido</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="Barrios Alicia">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Correo electrónico</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="alibarrios@jotmail.com">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">DNI</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="35496962">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Domicilio</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="Cordoba 732">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Ciudad</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="Resistencia">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Provincia</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="Chaco">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Código Postal</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="3500">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Teléfono Fijo</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="03624455788">
-                </div>
-            </div>
-
-                <hr>
-
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label"><b>Datos del Producto:</b></label>
-            </div>
-
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Número de Producto</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="6520530223">
-                </div>
-            </div>
-                        <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Tipo de Producto</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" value="Termotanque">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Descripción del Problema</label>
-                <div class="col-sm-6">
-                    <textarea readonly class="form-control" rows="5">
-(Esto es un textarea destinada a describir el problema)
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi nisi quam eius labore repellendus aperiam nemo incidunt ullam ex odit hic dolorum ipsum est, deserunt soluta velit, assumenda perspiciatis.
-                    </textarea>
-                </div>
-            </div>
-
-                <hr>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label"><b>Estado de Reclamo:</b></label>
-                <div class="col-sm-6">
-                    <input type="text" readonly class="form-control" value="Pendiente">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label"><b>Fecha de Inicio:</b></label>
-                <div class="col-sm-6">
-                    <input type="text" readonly class="form-control-plaintext" value="2019-03-30">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label"><b>Técnico Asociado:</b></label>
-                <div class="col-sm-6">
-                    <input type="text" readonly class="form-control-plaintext" value="-">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label"><b>Fecha de Finalizado:</b></label>
-                <div class="col-sm-6">
-                    <input type="text" readonly class="form-control-plaintext" value="-">
-                </div>
-            </div>
-
-        </form>
         
-        <button type="submit" class="btn btn-secondary">Tomar Reclamo</button>      <!-- Si estado es "Pendiente" # Solo para Técnicos -->
+        <h3 class="text-center mt-3">Reclamo N° #218975</h3>
+        <h5 class="text-center mb-4 text-muted">Abierto el día 30 de Marzo de 2019</h5>
 
-        <button type="submit" class="btn btn-secondary">Finalizar Reclamo</button>      <!-- Si estado es "En Gestión" # Solo para Técnicos -->
-
-
-        <h4>Detallar reparación:</h4>     <!-- Solo para Técnicos -->
-        
-        <form>   <!-- Solo para Técnicos -->
-            <div class="form-group row">
-                <div class="col-sm-8">
-                    <textarea class="form-control" rows="5"></textarea>
+        <div class="row">
+            <div class="col-sm-6 col-md-5 offset-md-1">
+                <div class="card bg-light my-3">
+                    <div class="card-header">
+                        <h5 class="text-center"><i class="fas fa-user float-left"></i> Datos de Cliente</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Barrios Alicia</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">alibarrios@hotmail.com</h6>         
+                        <p class="card-text">DNI: 35496962 &nbsp&nbsp&nbsp&nbsp Tel: 03624455788</p>
+                        <p class="card-text">Cordoba 732, Resistencia, Chaco (3500)</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm2 offset-sm-6">
-                <button type="submit" class="btn btn-secondary">Confirmar</button>
+            <div class="col-sm-6 col-md-5">
+                <div class="card bg-light my-3">
+                    <div class="card-header">
+                        <h5 class="text-center"><i class="fas fa-box-open float-left"></i> Datos del Producto</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Termotanque</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Nro producto: 3220530223</h6>         
+                        <p class="card-text">Modelo: TR-505</p>
+                        <p class="card-text"> &nbsp </p>                        
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card bg-light my-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Descripción del problema:</h5>
+                        <p class="card-text">
+                            El termotanque no enciende. Se encuentra conectado a la red eléctrica y la llave de paso de agua está abierta.
+                            No se enciende la luz piloto.
+                            El producto se encuentra dentro del rango de fechas de garantías.
+                        </p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card bg-light my-3">
+                    <div class="card-header">
+                        <h5 class="text-center">Estado del Reclamo</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-secondary" role="alert" v-if="pendiente">Pendiente</div>
+                        <div class="alert alert-warning" role="alert" v-if="gestion">En gestión</div>
+                        <div class="alert alert-success" role="alert" v-if="fin">Finalizado</div>
+
+                        <div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label"><b>Fecha de Inicio:</b></label>
+                                <div class="col-sm-6">
+                                    <p>{{fechaini}}</p>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label"><b>Técnico Asociado:</b></label>
+                                <div class="col-sm-6">
+                                        <p>{{tecnico}}</p>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label"><b>Fecha de Finalizado:</b></label>
+                                <div class="col-sm-6">
+                                    <p>{{fechafin}}</p>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-secondary btn-block" @click="gestionar()" v-if="pendiente">Tomar Reclamo</button>      <!-- Si estado es "Pendiente" # Solo para Técnicos -->                    
+                            <button class="btn btn-secondary btn-block" @click="finalizar()" v-if="gestion">Finalizar Reclamo</button>      <!-- Si estado es "En Gestión" # Solo para Técnicos -->
+                        </div>              
+                                                
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2" v-show="fin">
+
+                <h4>Detallar reparación:</h4>     <!-- Solo para Técnicos -->
+                
+                <form>   <!-- Solo para Técnicos -->
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-secondary btn-block" id="confirmar">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <br>
 
 
     </div>
@@ -147,19 +127,48 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi nisi qu
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
-        /*
         var vue = new Vue({
             el:'main',
             created() {
                 console.log('creado')
             },
-            data:{
+            data() {
+                return{
+                    pendiente:true,
+                    gestion:false,
+                    fin:false,
+
+                    fechaini:"-",
+                    fechafin:"-",
+                    tecnico:"-",
+                }
             
             },
-            methods:{},
+            watch:{
+                fin: function(){
+                    // console.log("asd")
+                    setTimeout(function() {
+                        let boton=document.querySelector('#confirmar');
+                        boton.scrollIntoView({block:'start',behavior:'smooth'})
+                    },100);
+                    // setTimeout(funcion, tiemṕo);
+                }
+            },
+            methods:{
+                gestionar(){
+                    this.pendiente=false
+                    this.gestion=true
+                    this.fechaini="30-07-2019"
+                    this.tecnico="Edward Yourdon"
+                },
+                finalizar(){
+                    this.gestion=false
+                    this.fin=true
+                    this.fechafin="30-07-2019"
+                }
+            },
             computed:{}
         });
-        */
         </script>
 </body>
 </html>
